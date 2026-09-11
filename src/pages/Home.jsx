@@ -21,33 +21,33 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Início"
-        description="Jorge é um sistema de informação que ajuda pequenos produtores rurais a organizar custos, receitas e decisões de cultivo com dados."
+        title="Home"
+        description="Projeto Jorge, apresentando a proposta, o contexto e a equipe por trás da solução."
       />
 
       {/* Hero */}
       <section className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-[1.1fr_1fr] md:items-center md:py-24">
         <div>
-          <h1 className="font-display text-4xl leading-[1.1] text-forest sm:text-5xl">
-            Jorge cuida dos números para que você cuide da terra.
+          <h1 className="font-display text-5xl leading-[0.95] text-forest sm:text-6xl lg:text-7xl">
+            Jorge
           </h1>
-          <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/80">
-            Um sistema pensado para pequenos produtores rurais e agricultores
-            familiares organizarem custos, receitas e safras — e tomarem
-            decisões com a mesma clareza que os grandes produtores já têm.
+          <p className="mt-4 max-w-2xl text-xl leading-relaxed text-ink/80 sm:text-2xl">
+            Projeto de gestão para pequenos produtores rurais, pensado para
+            organizar dados, entender custos e apoiar decisões com mais
+            clareza.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Link
               to="/projeto"
               className="rounded-sm bg-forest px-6 py-3 text-sm font-semibold text-sand transition-colors hover:bg-forest-deep"
             >
-              Conhecer o projeto
+              Sobre o projeto
             </Link>
             <Link
               to="/equipe"
               className="rounded-sm border border-soil px-6 py-3 text-sm font-semibold text-soil transition-colors hover:bg-sand-deep"
             >
-              Quem está por trás
+              Sobre nós
             </Link>
           </div>
         </div>
@@ -63,24 +63,25 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-16 md:py-20">
         <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:gap-16">
           <h2 className="font-display text-3xl leading-tight text-forest">
-            O grande produtor compra mais barato e vende mais caro. Não por
-            sorte — por informação.
+            O contexto do projeto Jorge
           </h2>
           <div className="space-y-4 text-[17px] leading-relaxed text-ink/80">
             <p>
-              Pequenos produtores rurais tomam decisões importantes — o que
-              plantar, quando vender, quanto investir — sem ter à mão dados
-              consolidados sobre seus próprios custos, sua produção e o
-              mercado ao redor.
+              O projeto nasceu a partir da percepção de que pequenos produtores
+              rurais frequentemente tomam decisões importantes sem acesso a
+              uma visão clara de custos, produção e rentabilidade. Em muitos
+              casos, a dificuldade não está na vontade de produzir, mas na
+              falta de organização e informação para planejar melhor.
             </p>
             <p>
-              Essa falta de informação tem um preço: insumos comprados mais
-              caros, produção vendida por menos, e erros que, para uma
-              família rural, custam caro demais para se repetir.
+              Por isso, o Jorge foi pensado como uma proposta acadêmica que
+              reúne tecnologia, gestão e análise para apoiar a atividade rural
+              com mais inteligência e autonomia.
             </p>
             <p className="text-forest font-medium">
-              Jorge existe para reduzir essa distância — com uma ferramenta de
-              gestão acessível, e não com mais uma consultoria cara.
+              A ideia central do projeto é demonstrar como soluções digitais
+              podem contribuir para a tomada de decisão no campo, em um
+              contexto de inovação e desenvolvimento acadêmico.
             </p>
           </div>
         </div>
@@ -112,10 +113,10 @@ export default function Home() {
         </div>
 
         <Link
-          to="/como-funciona"
+          to="/projeto"
           className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-forest underline decoration-wheat decoration-2 underline-offset-4 hover:text-forest-deep"
         >
-          Ver como isso funciona em detalhe
+          Conhecer mais sobre o projeto
         </Link>
       </section>
     </>

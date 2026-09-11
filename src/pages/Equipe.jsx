@@ -1,61 +1,74 @@
 import Seo from '../components/Seo.jsx'
-import PlaceholderAvatar from '../components/PlaceholderAvatar.jsx'
 
 const equipe = [
-  { nome: 'Matheus Gustavo Machado da Pedra' },
-  { nome: 'Yuri Rosante Pontuschka' },
-  { nome: 'Gabriel Basílio Beckedorff' },
-  { nome: 'André Morales de Oliveira Carneiro' },
+  { nome: 'Matheus Gustavo Machado da Pedra', foto: '/src/assets/team/matheus.jpeg' },
+  { nome: 'Yuri Rosante Pontuschka', foto: '/src/assets/team/yuri.jpeg' },
+  { nome: 'Gabriel Basílio Beckedorff', foto: '/src/assets/team/gabriel.jpeg' },
+  { nome: 'André Morales de Oliveira Carneiro', foto: '/src/assets/team/andre.jpeg' },
 ]
 
 export default function Equipe() {
   return (
     <>
       <Seo
-        title="Equipe"
-        description="Conheça o grupo de estudantes universitários por trás do projeto Jorge."
+        title="Sobre nós"
+        description="Conheça o grupo de estudantes universitários por trás do projeto de faculdade Jorge."
       />
 
       <section className="mx-auto max-w-3xl px-6 py-16 md:py-24">
         <h1 className="font-display text-4xl leading-tight text-forest sm:text-5xl">
-          Quem está por trás do Jorge
+          Sobre nós
         </h1>
         <p className="mt-6 text-[17px] leading-relaxed text-ink/80">
           Somos um grupo de estudantes universitários de Sistemas de
-          Informação. O Jorge nasceu como trabalho acadêmico, a partir de uma
-          pergunta simples: por que a gestão rural inteligente ainda é
-          privilégio de quem já tem escala?
+          Informação responsável pelo desenvolvimento do projeto Jorge como
+          apresentação acadêmica. O trabalho nasce da busca por soluções
+          digitais úteis, acessíveis e voltadas a desafios reais do campo.
         </p>
       </section>
 
-      <section className="mx-auto max-w-5xl px-6 pb-20 md:pb-28">
-        <div className="grid gap-6 sm:grid-cols-2">
+      <section className="mx-auto max-w-6xl px-6 pb-20 md:pb-28">
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
           {equipe.map((pessoa, i) => (
-            <div
+            <article
               key={pessoa.nome}
-              className="flex items-center gap-5 rounded-sm border border-soil-light/40 bg-paper p-6"
+              className="overflow-hidden rounded-sm border border-soil-light/40 bg-paper shadow-sm transition-transform duration-200 hover:-translate-y-1"
             >
-              <PlaceholderAvatar name={pessoa.nome} index={i} className="h-20 w-20 shrink-0" />
-              <div>
-                <p className="font-display text-lg text-forest">{pessoa.nome}</p>
-                <p className="mt-1 text-sm text-ink/65">Integrante do projeto Jorge</p>
+              <div className="flex h-56 items-center justify-center border-b border-soil-light/40 bg-sand-deep">
+                {pessoa.foto ? (
+                  <img
+                    src={pessoa.foto}
+                    alt={pessoa.nome}
+                    className="h-full w-full object-cover object-top"
+                  />
+                ) : (
+                  <div className="flex h-28 w-28 items-center justify-center rounded-[1.25rem] bg-forest text-2xl font-display text-sand">
+                    {pessoa.nome
+                      .split(' ')
+                      .map((parte) => parte[0])
+                      .slice(0, 2)
+                      .join('')
+                      .toUpperCase()}
+                  </div>
+                )}
               </div>
-            </div>
+
+              <div className="flex min-h-[170px] flex-col justify-between p-6">
+                <div>
+                  <p className="font-display text-xl leading-tight text-forest">{pessoa.nome}</p>
+                  <p className="mt-2 text-sm uppercase tracking-[0.12em] text-soil">
+                    Integrante
+                  </p>
+                </div>
+
+                <p className="mt-5 text-[15px] leading-relaxed text-ink/70">
+                  Membro do projeto Jorge, contribuindo com o desenvolvimento,
+                  a organização e a apresentação da proposta acadêmica.
+                </p>
+              </div>
+            </article>
           ))}
         </div>
-
-        <p className="mt-10 max-w-xl text-[15px] leading-relaxed text-ink/65">
-          Os espaços acima estão reservados para as fotos da equipe. Para
-          adicioná-las, coloque os arquivos de imagem em{' '}
-          <code className="rounded bg-sand-deep px-1.5 py-0.5 text-[13px]">
-            src/assets/team/
-          </code>{' '}
-          e troque o componente de iniciais por uma tag de imagem em{' '}
-          <code className="rounded bg-sand-deep px-1.5 py-0.5 text-[13px]">
-            src/pages/Equipe.jsx
-          </code>
-          .
-        </p>
       </section>
     </>
   )

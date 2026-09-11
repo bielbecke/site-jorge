@@ -3,11 +3,9 @@ import { NavLink } from 'react-router-dom'
 import JorgeMark from './JorgeMark.jsx'
 
 const links = [
-  { to: '/', label: 'Início' },
-  { to: '/projeto', label: 'O projeto' },
-  { to: '/como-funciona', label: 'Como funciona' },
-  { to: '/equipe', label: 'Equipe' },
-  { to: '/contato', label: 'Contato' },
+  { to: '/', label: 'Home' },
+  { to: '/projeto', label: 'Sobre o projeto' },
+  { to: '/equipe', label: 'Sobre nós' },
 ]
 
 export default function Navbar() {

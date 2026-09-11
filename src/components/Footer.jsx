@@ -12,9 +12,10 @@ export default function Footer() {
               <span className="font-display text-xl">Jorge</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-sand/75">
-              Do grego <em>Geōrgios</em>, "aquele que trabalha a terra". Um
-              projeto acadêmico que estuda como dar ao pequeno produtor rural
-              a mesma clareza de números que o grande produtor já tem.
+              Do grego <em>Geōrgios</em>, “aquele que trabalha a terra”.
+              Este site apresenta o projeto acadêmico Jorge, desenvolvido por
+              estudantes de Sistemas de Informação para apoiar a gestão rural
+              com mais clareza e organização.
             </p>
           </div>
 
@@ -23,10 +24,8 @@ export default function Footer() {
               Navegação
             </p>
             <ul className="mt-4 space-y-2 text-sm text-sand/80">
-              <li><Link to="/projeto" className="hover:text-wheat-light">O projeto</Link></li>
-              <li><Link to="/como-funciona" className="hover:text-wheat-light">Como funciona</Link></li>
-              <li><Link to="/equipe" className="hover:text-wheat-light">Equipe</Link></li>
-              <li><Link to="/contato" className="hover:text-wheat-light">Contato</Link></li>
+              <li><Link to="/projeto" className="hover:text-wheat-light">Sobre o projeto</Link></li>
+              <li><Link to="/equipe" className="hover:text-wheat-light">Sobre nós</Link></li>
             </ul>
           </div>
 
@@ -35,15 +34,15 @@ export default function Footer() {
               Sobre esta página
             </p>
             <p className="mt-4 text-sm leading-relaxed text-sand/75">
-              Site institucional de apresentação do projeto Jorge, um
-              trabalho acadêmico em Sistemas de Informação. A plataforma
-              descrita aqui ainda está em desenvolvimento.
+              Este site apresenta o projeto Jorge, destacando sua proposta,
+              contexto e equipe responsável, além de compartilhar uma visão
+              geral da solução desenvolvida.
             </p>
           </div>
         </div>
 
         <div className="mt-10 border-t border-sand/15 pt-6 text-xs text-sand/60">
-          © {new Date().getFullYear()} Projeto Jorge — projeto acadêmico, sem fins comerciais.
+          © {new Date().getFullYear()} Projeto Jorge — projeto acadêmico desenvolvido por estudantes.
         </div>
       </div>
     </footer>
