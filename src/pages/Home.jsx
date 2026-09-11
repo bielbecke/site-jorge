@@ -27,7 +27,7 @@ export default function Home() {
 
       {/* Hero */}
       <section className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-[1.1fr_1fr] md:items-center md:py-24">
-        <div>
+        <div className="order-2 md:order-1">
           <h1 className="font-display text-5xl leading-[0.95] text-forest sm:text-6xl lg:text-7xl">
             Jorge
           </h1>
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="reveal-on-load order-first md:order-last">
+        <div className="order-1 md:order-2">
           <FieldIllustration className="w-full max-w-md md:max-w-none" />
         </div>
       </section>

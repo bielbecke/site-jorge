@@ -1,10 +1,14 @@
 import Seo from '../components/Seo.jsx'
+import matheus from '../assets/team/matheus.jpeg'
+import yuri from '../assets/team/yuri.jpeg'
+import gabriel from '../assets/team/gabriel.jpeg'
+import andre from '../assets/team/andre.jpeg'
 
 const equipe = [
-  { nome: 'Matheus Gustavo Machado da Pedra', foto: '/src/assets/team/matheus.jpeg' },
-  { nome: 'Yuri Rosante Pontuschka', foto: '/src/assets/team/yuri.jpeg' },
-  { nome: 'Gabriel Basílio Beckedorff', foto: '/src/assets/team/gabriel.jpeg' },
-  { nome: 'André Morales de Oliveira Carneiro', foto: '/src/assets/team/andre.jpeg' },
+  { nome: 'Matheus Gustavo Machado da Pedra', foto: matheus },
+  { nome: 'Yuri Rosante Pontuschka', foto: yuri },
+  { nome: 'Gabriel Basílio Beckedorff', foto: gabriel },
+  { nome: 'André Morales de Oliveira Carneiro', foto: andre },
 ]
 
 export default function Equipe() {
