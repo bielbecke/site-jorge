@@ -41,7 +41,7 @@ export default function Projeto() {
             </div>
           </div>
 
-          <div className="rounded-sm border border-soil-light/40 bg-paper p-4 shadow-sm">
+          <div className="reveal-on-load rounded-sm border border-soil-light/40 bg-paper p-4 shadow-sm">
             <div className="relative overflow-hidden rounded-sm bg-gradient-to-br from-forest via-forest to-forest-deep p-5 text-sand">
               <div className="absolute inset-0 opacity-20">
                 <div className="absolute -right-10 -top-8 h-36 w-36 rounded-full bg-wheat" />

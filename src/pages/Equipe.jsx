@@ -36,7 +36,7 @@ export default function Equipe() {
           {equipe.map((pessoa, i) => (
             <article
               key={pessoa.nome}
-              className="overflow-hidden rounded-sm border border-soil-light/40 bg-paper shadow-sm transition-transform duration-200 hover:-translate-y-1"
+              className="card-hover reveal-on-load overflow-hidden rounded-sm border border-soil-light/40 bg-paper shadow-sm"
             >
               <div className="flex h-56 items-center justify-center border-b border-soil-light/40 bg-sand-deep">
                 {pessoa.foto ? (

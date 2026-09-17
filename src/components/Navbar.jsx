@@ -5,6 +5,7 @@ import JorgeMark from './JorgeMark.jsx'
 const links = [
   { to: '/', label: 'Home' },
   { to: '/projeto', label: 'Sobre o projeto' },
+  { to: '/projetos-externos', label: 'Projetos' },
   { to: '/equipe', label: 'Sobre nós' },
 ]
 

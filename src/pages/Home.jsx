@@ -26,7 +26,7 @@ export default function Home() {
       />
 
       {/* Hero */}
-      <section className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-[1.1fr_1fr] md:items-center md:py-24">
+      <section className="reveal-on-load mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-[1.1fr_1fr] md:items-center md:py-24">
         <div className="order-1">
           <h1 className="font-display text-5xl leading-[0.95] text-forest sm:text-6xl lg:text-7xl">
             Jorge
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
 
         <div className="order-2">
-          <FieldIllustration className="w-full max-w-md md:max-w-none" />
+          <FieldIllustration className="float-slow w-full max-w-md md:max-w-none" />
         </div>
       </section>
 
@@ -103,7 +103,7 @@ export default function Home() {
 
         <div className="mt-10 grid gap-px overflow-hidden rounded-sm border border-soil-light/40 bg-soil-light/40 md:grid-cols-3">
           {pillars.map((pillar) => (
-            <div key={pillar.title} className="bg-paper p-7">
+            <div key={pillar.title} className="card-hover bg-paper p-7">
               <h3 className="font-display text-xl text-forest">{pillar.title}</h3>
               <p className="mt-3 text-[15px] leading-relaxed text-ink/75">
                 {pillar.text}
