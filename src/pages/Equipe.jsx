@@ -5,7 +5,12 @@ import gabriel from '../assets/team/gabriel.jpeg'
 import andre from '../assets/team/andre.jpeg'
 
 const equipe = [
-  { nome: 'Matheus Gustavo Machado da Pedra', foto: matheus },
+  {
+    nome: 'Matheus Gustavo Machado da Pedra',
+    foto: matheus,
+    descricao:
+      'Com forte interesse em técnicas de aprendizado de máquina, tem atuado como estágiário de ciências de dados no banco Itau, colaborando com a predição da precificação de imóveis através de modelos estatístico. No tempo livre, gosta de jogar bola e comer um churrasco com os amigos.',
+  },
   { nome: 'Yuri Rosante Pontuschka', foto: yuri },
   { nome: 'Gabriel Basílio Beckedorff', foto: gabriel },
   { nome: 'André Morales de Oliveira Carneiro', foto: andre },
@@ -66,8 +71,8 @@ export default function Equipe() {
                 </div>
 
                 <p className="mt-5 text-[15px] leading-relaxed text-ink/70">
-                  Membro do projeto Jorge, contribuindo com o desenvolvimento,
-                  a organização e a apresentação da proposta acadêmica.
+                  {pessoa.descricao ||
+                    'Membro do projeto Jorge, contribuindo com o desenvolvimento, a organização e a apresentação da proposta acadêmica.'}
                 </p>
               </div>
             </article>
