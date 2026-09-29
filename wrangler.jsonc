@@ -1,7 +1,25 @@
 {
   "name": "jorge-site",
   "compatibility_date": "2026-09-11",
+  "main": "./worker/index.js",
   "assets": {
     "directory": "./dist"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "jorge-projects",
+      "database_id": "replace-with-your-d1-database-id",
+      "migrations_dir": "./migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "PROJECT_FILES",
+      "bucket_name": "jorge-project-files"
+    }
+  ],
+  "vars": {
+    "SESSION_TTL_SECONDS": "604800"
   }
 }

@@ -10,7 +10,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "hash-password": "node scripts/hash-password.mjs"
   },
   "dependencies": {
     "react": "^19.2.8",
