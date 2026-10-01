@@ -69,6 +69,12 @@ body {
     box-shadow: 0 18px 35px rgba(36, 64, 43, 0.12);
   }
 
+  .team-card:hover {
+    transform: translateY(-8px) scale(1.015);
+    border-color: var(--color-wheat);
+    box-shadow: 0 20px 38px rgba(36, 64, 43, 0.18);
+  }
+
   .button-animate {
     transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
   }
