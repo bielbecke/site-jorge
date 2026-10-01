@@ -49,6 +49,12 @@ export default function Home() {
             >
               Sobre nós
             </Link>
+            <Link
+              to="/projetos-externos"
+              className="rounded-sm border border-soil px-6 py-3 text-sm font-semibold text-soil transition-colors hover:bg-sand-deep"
+            >
+              Documentação
+            </Link>
           </div>
         </div>
 
