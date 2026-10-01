@@ -21,13 +21,13 @@ export default function ProjetosExternos() {
 
   return (
     <>
-      <Seo title="Projetos" description="Conheça os projetos publicados pelo Jorge." />
+      <Seo title="Documentação" description="Consulte a documentação publicada pelo Jorge." />
 
       <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-        <p className="font-display text-sm italic text-soil">Organização por tema</p>
-        <h1 className="mt-3 font-display text-5xl leading-tight text-forest sm:text-6xl">Projetos</h1>
+        <p className="font-display text-sm italic text-soil">Materiais do projeto</p>
+        <h1 className="mt-3 font-display text-5xl leading-tight text-forest sm:text-6xl">Documentação</h1>
         <p className="mt-6 max-w-3xl text-[17px] leading-relaxed text-ink/80">
-          Conheça os projetos publicados pela equipe e consulte seus materiais.
+          Consulte os documentos publicados pela equipe do projeto Jorge.
         </p>
       </section>
 
@@ -40,8 +40,8 @@ export default function ProjetosExternos() {
         )}
         {status === 'ready' && projects.length === 0 && (
           <div className="rounded-sm border border-soil-light/40 bg-paper p-8 text-center">
-            <h2 className="font-display text-2xl text-forest">Ainda não há projetos publicados</h2>
-            <p className="mt-2 text-ink/70">Volte em breve para conhecer as novidades.</p>
+            <h2 className="font-display text-2xl text-forest">Ainda não há documentos publicados</h2>
+            <p className="mt-2 text-ink/70">Volte em breve para consultar os novos materiais.</p>
           </div>
         )}
         <div className="space-y-6">

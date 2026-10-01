@@ -25,7 +25,7 @@ export default function Footer() {
             </p>
             <ul className="mt-4 space-y-2 text-sm text-sand/80">
               <li><Link to="/projeto" className="hover:text-wheat-light">Sobre o projeto</Link></li>
-              <li><Link to="/projetos-externos" className="hover:text-wheat-light">Projetos</Link></li>
+              <li><Link to="/projetos-externos" className="hover:text-wheat-light">Documentação</Link></li>
               <li><Link to="/equipe" className="hover:text-wheat-light">Sobre nós</Link></li>
             </ul>
           </div>
